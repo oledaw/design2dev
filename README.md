@@ -1,19 +1,19 @@
 # Modern React Landing Page
 
-This project aims to *deliver real value through an IT application*, built incrementally section by section. 
-The focus is on practical outcomes over technical perfection, leveraging *external tools and AI for support*. 
-The *total time budget* for development is just *6 hours*, emphasizing speed, simplicity, and impact.
+This project aims to **deliver real value through an IT application**, built incrementally section by section. 
+The focus is on practical outcomes over technical perfection, **leveraging external tools and AI for support**. 
+The **total time budget** for development is just **6 hours**, emphasizing speed, simplicity, and impact.
 
-1h - spent on getting started with animaapp & builder.io
-2h - spent on converting design into react code & adding responsivness - animaapp & builder.io
-1h - spent on restructuring code & first refactoring - copilot
-1h - spent on polishing the code and cleaning it up - cursor
+- 1h - spent on **getting started** with animaapp & builder.io
+- 2h - spent on **converting design into react code** & adding responsivness - animaapp & builder.io
+- 1h - spent on restructuring code & **first refactoring** - copilot
+- 1h - spent on **polishing the code** and cleaning it up - cursor
 
 
 
-Figma: https://www.figma.com/design/g7GyLkbuKEtB4jjHmgdlwK/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=5-573&t=xk5QZTdWngnplttZ-4
+- Figma: https://www.figma.com/design/g7GyLkbuKEtB4jjHmgdlwK/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=5-573&t=xk5QZTdWngnplttZ-4
 
-Web: https://oledaw.github.io/design2dev/
+- Web: https://oledaw.github.io/design2dev/
 
 
 ## Features
