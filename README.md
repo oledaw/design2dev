@@ -1,21 +1,33 @@
 # Modern React Landing Page
 
-A modern, responsive landing page built with React and styled-components. This project features a clean, professional design with smooth animations and a fully responsive layout.
+This project aims to *deliver real value through an IT application*, built incrementally section by section. 
+The focus is on practical outcomes over technical perfection, leveraging *external tools and AI for support*. 
+The *total time budget* for development is just *6 hours*, emphasizing speed, simplicity, and impact.
+
+1h - spent on getting started with animaapp & builder.io
+2h - spent on converting design into react code & adding responsivness - animaapp & builder.io
+1h - spent on restructuring code & first refactoring - copilot
+1h - spent on polishing the code and cleaning it up - cursor
+
+
+
+Figma: https://www.figma.com/design/g7GyLkbuKEtB4jjHmgdlwK/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=5-573&t=xk5QZTdWngnplttZ-4
+
+Web: https://oledaw.github.io/design2dev/
+
 
 ## Features
 
 - 🎨 Modern and clean UI design
 - 📱 Fully responsive layout
-- ⚡ Fast and optimized performance
 - 🎯 Interactive components
-- 🔍 SEO friendly
 - 🎭 Smooth animations and transitions
+- 🔍 SEO friendly (TBD)
 
 ## Tech Stack
 
 - React
 - Styled Components
-- CSS-in-JS
 - Inter font family
 - Modern JavaScript (ES6+)
 
@@ -55,12 +67,15 @@ The application will open in your default browser at `http://localhost:3000`.
 ```
 src/
 ├── components/         # React components
-│   ├── Button/        # Button component
-│   ├── Navigation/    # Navigation bar
-│   ├── HeroSection/   # Hero section
-│   ├── Footer/        # Footer component
+│   ├── Button.jsx        # Button component
+│   ├── Button.styles.js        # Button component styles
+│   ├── Navigation.jsx    # Navigation bar
+│   ├── Navigation.styles.js    # Navigation bar styles
+│   ├── HeroSection.jsx   # Hero section
+│   ├── HeroSection.styles.js   # Hero section styles
+│   ├── Footer.jsx        # Footer component
+│   ├── Footer.styles.js        # Footer component styles
 │   └── ...           # Other components
-├── styles/           # Global styles
 └── App.js           # Main application component
 ```
 
@@ -71,14 +86,8 @@ src/
 - `npm run build` - Builds the app for production
 - `npm run eject` - Ejects from Create React App
 
-## Contributing
+## Tools
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+- Anima App & Builder.io: Converts Figma designs to code.
+- Copilot: Provides initial support for messy code.
+- Cursor: Polishes and refactors code.
