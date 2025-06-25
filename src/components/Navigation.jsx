@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import React, { useEffect, useRef, useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
 import Button from "./Button";
 import Link from "./Link";
 import {
