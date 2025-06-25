@@ -19,12 +19,12 @@ import {
 } from "./Navigation.styles";
 
 const NAV_LINKS = [
-  { id: 1, label: "Home", href: "/", isRoute: true },
-  { id: 2, label: "Service", href: "#service", isRoute: false },
-  { id: 3, label: "Feature", href: "#feature", isRoute: false },
-  { id: 4, label: "Product", href: "#product", isRoute: false },
-  { id: 5, label: "Testimonial", href: "#testimonial", isRoute: false },
-  { id: 6, label: "FAQ", href: "/faq", isRoute: true },
+  { id: 1, label: "Home", href: "#home" },
+  { id: 2, label: "Service", href: "#service" },
+  { id: 3, label: "Feature", href: "#feature" },
+  { id: 4, label: "Product", href: "#product" },
+  { id: 5, label: "Testimonial", href: "#testimonial" },
+  { id: 6, label: "FAQ", href: "#faq" },
 ];
 
 export default function Navigation() {
