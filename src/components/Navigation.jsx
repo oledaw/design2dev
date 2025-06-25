@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { React, useEffect, useRef, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import Button from "./Button";
 import Link from "./Link";
 import {
@@ -24,7 +25,7 @@ const NAV_LINKS = [
   { id: 3, label: "Feature", href: "#feature" },
   { id: 4, label: "Product", href: "#product" },
   { id: 5, label: "Testimonial", href: "#testimonial" },
-  { id: 6, label: "FAQ", href: "#faq" }
+  { id: 6, label: "FAQ", href: "#faq" },
 ];
 
 export default function Navigation() {
@@ -85,15 +86,38 @@ export default function Navigation() {
       <Nav ref={navRef} className="nav-visible">
         <LogoWrapper>
           <LogoIconGroup>
-          <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.7863 13.1341L13.3954 22.3669L8.00448 13.1341H18.7863ZM20.2305 12.3088H6.55444L13.3954 24L20.2305 12.3088Z" fill="#263238"/>
-<path d="M28.1591 1.65038L33.55 10.8833H22.7681L28.1591 1.65038ZM28.1591 0L21.3181 11.6912H35L28.1591 0Z" fill="#263238"/>
-<path d="M0 0L5.7359 10.3409L12.0038 0.259661L0 0Z" fill="#4CAF4F"/>
-<path d="M13.3955 0.905762L19.4121 11.1889H7.36728L13.3955 0.905762Z" fill="#4CAF4F"/>
-<path d="M20.9615 13.4341L26.9839 24H14.6526L20.7744 13.4341H20.9615Z" fill="#4CAF4F"/>
-<path d="M22.2653 12.7935L28.1591 23.1978L34.1347 12.7935H22.2653Z" fill="#4CAF4F"/>
-</svg>
-
+            <svg
+              width="35"
+              height="24"
+              viewBox="0 0 35 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.7863 13.1341L13.3954 22.3669L8.00448 13.1341H18.7863ZM20.2305 12.3088H6.55444L13.3954 24L20.2305 12.3088Z"
+                fill="#263238"
+              />
+              <path
+                d="M28.1591 1.65038L33.55 10.8833H22.7681L28.1591 1.65038ZM28.1591 0L21.3181 11.6912H35L28.1591 0Z"
+                fill="#263238"
+              />
+              <path
+                d="M0 0L5.7359 10.3409L12.0038 0.259661L0 0Z"
+                fill="#4CAF4F"
+              />
+              <path
+                d="M13.3955 0.905762L19.4121 11.1889H7.36728L13.3955 0.905762Z"
+                fill="#4CAF4F"
+              />
+              <path
+                d="M20.9615 13.4341L26.9839 24H14.6526L20.7744 13.4341H20.9615Z"
+                fill="#4CAF4F"
+              />
+              <path
+                d="M22.2653 12.7935L28.1591 23.1978L34.1347 12.7935H22.2653Z"
+                fill="#4CAF4F"
+              />
+            </svg>
           </LogoIconGroup>
           <div
             dangerouslySetInnerHTML={{
@@ -106,24 +130,18 @@ export default function Navigation() {
           <NavLinks>
             {NAV_LINKS.map((link) => (
               <NavLink key={link.id}>
-                <Link href={link.href} variant="dark">{link.label}</Link>
+                <Link href={link.href} variant="dark">
+                  {link.label}
+                </Link>
               </NavLink>
             ))}
           </NavLinks>
         </NavLinksWrapper>
         <NavActions>
-          <Button 
-            onClick={handleLogin}
-            type="tertiary"
-            size="medium"
-          >
+          <Button onClick={handleLogin} type="tertiary" size="medium">
             Login
           </Button>
-          <Button 
-            onClick={handleSignup}
-            type="primary"
-            size="medium"
-          >
+          <Button onClick={handleSignup} type="primary" size="medium">
             Sign up
           </Button>
         </NavActions>
@@ -136,23 +154,17 @@ export default function Navigation() {
         <MobileNavLinks>
           {NAV_LINKS.map((link) => (
             <MobileNavLink key={link.id} onClick={handleCloseMenu}>
-              <Link href={link.href} variant="dark">{link.label}</Link>
+              <Link href={link.href} variant="dark">
+                {link.label}
+              </Link>
             </MobileNavLink>
           ))}
         </MobileNavLinks>
         <MobileNavActions>
-          <Button 
-            onClick={handleLogin}
-            type="tertiary"
-            size="medium"
-          >
+          <Button onClick={handleLogin} type="tertiary" size="medium">
             Login
           </Button>
-          <Button 
-            onClick={handleSignup}
-            type="primary"
-            size="medium"
-          >
+          <Button onClick={handleSignup} type="primary" size="medium">
             Sign up
           </Button>
         </MobileNavActions>
