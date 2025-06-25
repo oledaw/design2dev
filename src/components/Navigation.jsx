@@ -76,30 +76,6 @@ export default function Navigation() {
   const handleLogin = () => console.log("Login clicked");
   const handleSignup = () => console.log("Signup clicked");
 
-  const handleNavigation = (link) => {
-    if (link.isRoute) {
-      navigate(link.href);
-    } else {
-      // For hash links, navigate to home first if not already there, then scroll
-      if (location.pathname !== "/") {
-        navigate("/");
-        // Use a timeout to allow navigation to complete before scrolling
-        setTimeout(() => {
-          const element = document.querySelector(link.href);
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-          }
-        }, 100);
-      } else {
-        const element = document.querySelector(link.href);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }
-    }
-    setMobileOpen(false);
-  };
-
   return (
     <>
       <link
