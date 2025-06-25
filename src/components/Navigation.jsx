@@ -29,6 +29,8 @@ const NAV_LINKS = [
 ];
 
 export default function Navigation() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const navRef = useRef(null);
   const lastScrollY = useRef(window.scrollY);
   const [mobileOpen, setMobileOpen] = useState(false);
