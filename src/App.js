@@ -9,6 +9,7 @@ import Unlock from "./components/Unlock";
 import PixelgradeStory from "./components/PixelgradeStory";
 import Achievements from "./components/Achievements";
 import CommunityUpdates from "./components/CommunityUpdates";
+import FAQSection from "./components/FAQSection";
 
 function App() {
   return (
