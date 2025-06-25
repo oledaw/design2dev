@@ -183,8 +183,12 @@ export default function Navigation() {
         </CloseButton>
         <MobileNavLinks>
           {NAV_LINKS.map((link) => (
-            <MobileNavLink key={link.id} onClick={handleCloseMenu}>
-              <Link href={link.href} variant="dark">
+            <MobileNavLink key={link.id}>
+              <Link
+                href={link.href}
+                variant="dark"
+                onClick={() => handleNavigation(link)}
+              >
                 {link.label}
               </Link>
             </MobileNavLink>
