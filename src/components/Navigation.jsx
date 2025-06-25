@@ -158,10 +158,7 @@ export default function Navigation() {
                 <Link
                   href={link.href}
                   variant="dark"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavigation(link);
-                  }}
+                  onClick={() => handleNavigation(link)}
                 >
                   {link.label}
                 </Link>
