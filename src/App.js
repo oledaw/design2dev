@@ -22,6 +22,7 @@ function App() {
       <PixelgradeStory />
       <Achievements />
       <CommunityUpdates />
+      <FAQSection />
       <Footer />
     </div>
   );
