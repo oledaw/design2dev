@@ -17,6 +17,7 @@ function App() {
       <OurClients />
       <Community />
       <Unlock />
+      <PixelgradeStory />
       <Achievements />
       <CommunityUpdates />
       <Footer />
