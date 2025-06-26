@@ -79,6 +79,32 @@ export default function Navigation() {
   const handleLogin = () => console.log("Login clicked");
   const handleSignup = () => console.log("Signup clicked");
 
+  const handleNavigation = (link) => {
+    if (link.isRoute) {
+      // For routes like Home and FAQ
+      navigate(link.href);
+    } else {
+      // For hash links to sections
+      if (location.pathname !== "/") {
+        // If not on home page, navigate to home first, then scroll
+        navigate("/");
+        setTimeout(() => {
+          const element = document.querySelector(link.href);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100);
+      } else {
+        // Already on home page, just scroll
+        const element = document.querySelector(link.href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }
+    setMobileOpen(false);
+  };
+
   return (
     <>
       <link
