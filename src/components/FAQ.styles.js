@@ -104,7 +104,9 @@ export const AccordionItem = styled.div`
   }
 `;
 
-export const AccordionHeader = styled.button`
+export const AccordionHeader = styled.button.withConfig({
+  shouldForwardProp: (prop) => !["isOpen"].includes(prop),
+})`
   width: 100%;
   display: flex;
   align-items: center;
