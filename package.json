@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://oledaw.github.io/design2dev",
+  "homepage": "https://oledaw.github.io/#",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
