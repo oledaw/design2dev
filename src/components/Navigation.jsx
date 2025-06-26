@@ -158,7 +158,11 @@ export default function Navigation() {
           <NavLinks>
             {NAV_LINKS.map((link) => (
               <NavLink key={link.id}>
-                <Link href={link.href} variant="dark">
+                <Link
+                  href={link.href}
+                  variant="dark"
+                  onClick={() => handleNavigation(link)}
+                >
                   {link.label}
                 </Link>
               </NavLink>
