@@ -153,7 +153,9 @@ export const AccordionTitle = styled.h3`
   }
 `;
 
-export const AccordionIcon = styled.div`
+export const AccordionIcon = styled.div.withConfig({
+  shouldForwardProp: (prop) => !["isOpen"].includes(prop),
+})`
   display: flex;
   align-items: center;
   justify-content: center;
