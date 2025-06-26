@@ -177,7 +177,9 @@ export const AccordionIcon = styled.div.withConfig({
   }
 `;
 
-export const AccordionContent = styled.div`
+export const AccordionContent = styled.div.withConfig({
+  shouldForwardProp: (prop) => !["isOpen"].includes(prop),
+})`
   max-height: ${(props) => (props.isOpen ? "500px" : "0")};
   overflow: hidden;
   transition: max-height 0.3s ease;
