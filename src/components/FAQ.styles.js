@@ -187,7 +187,7 @@ export const AccordionContent = styled.div.withConfig({
 `;
 
 export const AccordionText = styled.div`
-  padding: 0 32px 24px;
+  padding: 24px 32px;
   color: #595959;
   font-family: Inter, sans-serif;
   font-size: 1rem;
@@ -195,11 +195,11 @@ export const AccordionText = styled.div`
   line-height: 1.6;
 
   @media (max-width: 768px) {
-    padding: 0 24px 20px;
+    padding: 20px 24px;
     font-size: 0.9rem;
   }
 
   @media (max-width: 480px) {
-    padding: 0 20px 16px;
+    padding: 16px 20px;
   }
 `;
