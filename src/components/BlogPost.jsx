@@ -105,7 +105,8 @@ const BlogPost = () => {
           <NotFoundContainer>
             <h2>Article Not Found</h2>
             <p>
-              The article you're looking for doesn't exist or has been removed.
+              The article you&apos;re looking for doesn&apos;t exist or has been
+              removed.
             </p>
             <Button onClick={handleBackClick} type="primary" size="medium">
               Back to Blog

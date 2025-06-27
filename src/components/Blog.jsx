@@ -30,7 +30,6 @@ import {
   EmptyState,
 } from "./Blog.styles";
 import {
-  blogPosts,
   getPostsPerPage,
   getTotalPages,
   getPostsByCategory,
