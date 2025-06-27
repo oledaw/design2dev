@@ -26,6 +26,7 @@ const NAV_LINKS = [
   { id: 4, label: "Product", href: "#product", isRoute: false },
   { id: 5, label: "Testimonial", href: "#testimonial", isRoute: false },
   { id: 6, label: "FAQ", href: "/faq", isRoute: true },
+  { id: 7, label: "Blog", href: "/blog", isRoute: true },
 ];
 
 export default function Navigation() {
