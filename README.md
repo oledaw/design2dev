@@ -2,12 +2,15 @@
 
 This project aims to **deliver real value through an IT application**, built incrementally section by section. 
 The focus is on practical outcomes over technical perfection, **leveraging external tools and AI for support**. 
-The **total time budget** for development is just **6 hours**, emphasizing speed, simplicity, and impact.
+The **total time budget** for development is just **8 hours**, emphasizing speed, simplicity, and impact.
 
 - 1h - spent on **getting started** with animaapp & builder.io
 - 2h - spent on **converting design into react code** & adding responsivness - animaapp & builder.io
-- 1h - spent on restructuring code & **first refactoring** - copilot
+- 2h - spent on restructuring code & **first refactoring** - copilot
 - 1h - spent on **polishing the code** and cleaning it up - cursor
+- 0.5h - spent on **routing and faq subpage** - builder.io
+- 0.5h - spent on **adding a blog** - builder.io
+- 1h - spent on **refactoring code and the file structure** - builder.io
 
 
 
@@ -20,6 +23,7 @@ The **total time budget** for development is just **6 hours**, emphasizing speed
 
 - 🎨 Modern and clean UI design
 - 📱 Fully responsive layout
+- 👨‍💻 Blog
 - 🎯 Interactive components
 - 🎭 Smooth animations and transitions
 - 🔍 SEO friendly (TBD)
