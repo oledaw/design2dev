@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Navigation from "./Navigation";
-import Footer from "./Footer";
+import PageLayout from "../layouts/PageLayout";
 import {
   FAQContainer,
   FAQContent,
@@ -74,8 +73,7 @@ const FAQ = () => {
   };
 
   return (
-    <>
-      <Navigation />
+    <PageLayout>
       <FAQContainer>
         <FAQContent>
           <PageTitle>Frequently Asked Questions</PageTitle>
@@ -118,8 +116,7 @@ const FAQ = () => {
           </AccordionContainer>
         </FAQContent>
       </FAQContainer>
-      <Footer />
-    </>
+    </PageLayout>
   );
 };
 
