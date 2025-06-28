@@ -26,6 +26,7 @@ const NAV_LINKS = [
   { id: 4, label: "Product", href: "#product", isRoute: false },
   { id: 5, label: "Testimonial", href: "#testimonial", isRoute: false },
   { id: 6, label: "FAQ", href: "/faq", isRoute: true },
+  { id: 7, label: "Blog", href: "/blog", isRoute: true },
 ];
 
 export default function Navigation() {
@@ -78,6 +79,7 @@ export default function Navigation() {
   const handleCloseMenu = () => setMobileOpen(false);
   const handleLogin = () => console.log("Login clicked");
   const handleSignup = () => console.log("Signup clicked");
+  const handleLogoClick = () => navigate("/");
 
   const handleNavigation = (link) => {
     if (link.isRoute) {
@@ -112,7 +114,7 @@ export default function Navigation() {
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       />
       <Nav ref={navRef} className="nav-visible">
-        <LogoWrapper>
+        <LogoWrapper onClick={handleLogoClick} style={{ cursor: "pointer" }}>
           <LogoIconGroup>
             <svg
               width="35"
